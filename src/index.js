@@ -33,6 +33,10 @@ document.addEventListener("DOMContentLoaded",() => {
       // append beer list to the 'nav'
         list.innerText = beer.name
         beerList.appendChild(list)  
+        // add event listener to activate beer  name, image, description and reviews.
+        list.addEventListener('click', () => {
+          
+        })
       })
     })
 })
