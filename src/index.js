@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded",() => {
             const newReview = document.createElement("li")
             newReview.style.cursor = "pointer"
             newReview.innerText = marketReview
+            // When the description form is submitted the beer's description should be updated on the page.
+            reviewList.appendChild(newReview)
+            reviewForm.reset()
           })
         })
       })
