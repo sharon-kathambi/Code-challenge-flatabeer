@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded",() => {
       })
       // call for loop to iterate over the array for each element in the array.
       beers.forEach(beer =>{
-        
+        const beerList = document.getElementById("beer-list")
       })
     })
 })
