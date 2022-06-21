@@ -55,6 +55,10 @@ document.addEventListener("DOMContentLoaded",() => {
             reviewForm.reset()
             newReview.addEventListener('click', (e) =>{
                 e.preventDefault()
+                // Remove a review from the page when it is clicked.       
+                newReview.remove()
+            })
+            })
           })
         })
       })
