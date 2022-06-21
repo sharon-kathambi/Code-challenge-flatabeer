@@ -26,9 +26,32 @@ document.addEventListener("DOMContentLoaded",() => {
             review.remove()
           })
         })
+        // call for loop to iterate over the array for each element in the array.
+        beers.forEach(beer =>{
+          const beerList = document.getElementById("beer-list")
+          const list = document.createElement("li")
+        // append beer list to the 'nav'
+          list.innerText = beer.name
+          beerList.appendChild(list)  
+          // add event listener to activate beer  name, image, description and reviews.
+          list.addEventListener('click', () => {
+            const beerName = document.getElementById("beer-name")
+            beerName.innerText = beer.name
+            beerImage.src = beer.image_url
+            const beerDescription = document.getElementById("beer-description")
+            beerDescription.innerText = beer.description
+            reviewList.textContent = beer.reviews
+            reviewList.textContent = beer[0].reviews
+            
+            const reviewForm = document.querySelector("#review-form")
+            reviewForm.addEventListener('submit', (e) => {
+                e.preventDefault()
+
+          })
+        })
       })
   })
-
+                
 
 
 
