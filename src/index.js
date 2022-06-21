@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded",() => {
         reviews.style.cursor ='pointer'
         reviews.innerText = review
         reviewList.appendChild(reviews)
+        reviews.addEventListener("click", (e) => {
+          e.preventDefault()
+          review.remove()
+        })
       })
     })
 })
