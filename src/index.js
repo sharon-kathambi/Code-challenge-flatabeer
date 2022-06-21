@@ -15,7 +15,12 @@ document.addEventListener("DOMContentLoaded",() => {
       beerTitle.textContent = beers[0].name
       beerImage.src = beers[0].image_url
       beerDesc.textContent = beers[0].description
-      reviewList.textContent = beers[0].reviews
-    
+      //reviewList.textContent = beers[0].reviews
+      beers[0].reviews.forEach(review => {
+        let reviews = document.createElement('li')
+        reviews.style.cursor ='pointer'
+        reviews.innerText = review
+        reviewList.appendChild(reviews)
+      })
     })
 })
