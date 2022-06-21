@@ -35,7 +35,8 @@ document.addEventListener("DOMContentLoaded",() => {
         beerList.appendChild(list)  
         // add event listener to activate beer  name, image, description and reviews.
         list.addEventListener('click', () => {
-          
+          const beerName = document.getElementById("beer-name")
+          beerName.innerText = beer.name
         })
       })
     })
