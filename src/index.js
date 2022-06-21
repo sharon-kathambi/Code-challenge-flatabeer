@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded",() => {
     .then((beers)=>{
       // display beer one
       beerTitle.textContent = beers[0].name
-      //console.log(beers)
+      beerImage.src = beers[0].image_url
+      beerDesc.textContent = beers[0].description
+      reviewList.textContent = beers[0].reviews
+    
     })
 })
