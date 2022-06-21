@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded",() => {
             // When the description form is submitted the beer's description should be updated on the page.
             reviewList.appendChild(newReview)
             reviewForm.reset()
+            newReview.addEventListener('click', (e) =>{
+                e.preventDefault()
           })
         })
       })
