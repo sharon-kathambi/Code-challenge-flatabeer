@@ -37,6 +37,11 @@ document.addEventListener("DOMContentLoaded",() => {
         list.addEventListener('click', () => {
           const beerName = document.getElementById("beer-name")
           beerName.innerText = beer.name
+          beerImage.src = beer.image_url
+          const beerDescription = document.getElementById("beer-description")
+          beerDescription.innerText = beer.description
+          reviewList.textContent = beer.reviews
+          reviewList.textContent = beer[0].reviews
         })
       })
     })
