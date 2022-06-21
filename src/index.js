@@ -26,5 +26,9 @@ document.addEventListener("DOMContentLoaded",() => {
           review.remove()
         })
       })
+      // call for loop to iterate over the array for each element in the array.
+      beers.forEach(beer =>{
+        
+      })
     })
 })
