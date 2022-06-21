@@ -46,7 +46,10 @@ document.addEventListener("DOMContentLoaded",() => {
             const reviewForm = document.querySelector("#review-form")
             reviewForm.addEventListener('submit', (e) => {
                 e.preventDefault()
-
+            const marketReview = document.getElementById("review").value
+            const newReview = document.createElement("li")
+            newReview.style.cursor = "pointer"
+            newReview.innerText = marketReview
           })
         })
       })
